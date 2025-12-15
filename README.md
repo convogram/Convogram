@@ -21,41 +21,11 @@ A sophisticated Telegram bot built with Mastra framework that provides intellige
 - **Blockchain**: Solana & EVM chains via web3.js and viem
 - **Workflow Engine**: Inngest for background jobs
 
-## Deployment on Replit
-
-This project is designed to run on [Replit](https://replit.com) with the following features:
-
-1. **Automatic Setup**: Fork this Repl and all dependencies will be installed automatically
-2. **PostgreSQL Integration**: Built-in database for storing users, messages, and inboxes
-3. **Secrets Management**: Use Replit Secrets to configure:
-   - `TELEGRAM_BOT_TOKEN`: Your Telegram bot token from [@BotFather](https://t.me/botfather)
-   - `OPENAI_API_KEY` or `OPENROUTER_API_KEY`: For AI analysis
-   - Other API keys as needed
-
-4. **One-Click Deploy**: Use the Deploy button in Replit to publish to production
-
-## Setup Instructions
-
-### 1. Fork to Replit
-Click the "Fork" button to create your own copy of this project.
-
-### 2. Configure Secrets
-Add these required secrets in the Replit Secrets tool:
-- `TELEGRAM_BOT_TOKEN` - Get from [@BotFather](https://t.me/botfather)
-- `OPENAI_API_KEY` or `OPENROUTER_API_KEY` - For AI features
-- `DATABASE_URL` - Auto-configured by Replit PostgreSQL
-
 ### 3. Run the Project
 Click the "Run" button. The bot will:
 - Initialize the database schema
 - Start the Mastra development server
 - Set up the Telegram webhook automatically
-
-### 4. Deploy to Production
-Click the "Deploy" button to publish your bot with:
-- Autoscale deployment for handling traffic
-- Persistent PostgreSQL database
-- Custom domain support (optional)
 
 ## Bot Commands
 
@@ -110,21 +80,3 @@ Supports:
 ## License
 
 ISC
-
-## Support
-
-For issues and questions:
-- Check the [Mastra documentation](https://docs.mastra.ai)
-- Review [Replit deployment docs](https://docs.replit.com/deployments)
-- Open an issue in this repository
-
-## Security Notes
-
-⚠️ **Never commit secrets to the repository**
-- Use Replit Secrets for all API keys and tokens
-- Private keys are encrypted in the database
-- Webhook endpoints are secured via Telegram validation
-
----
-
-Built with ❤️ using Mastra on Replit
